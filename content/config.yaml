@@ -19,7 +19,7 @@ plugins:
       upstream:
         - addr: 'https://family.adguard-dns.com/dns-query'
           dial_addr: '94.140.14.15:443'
-          trusted: true
+          trusted: true 
           
   - tag: "mem_cache"
     type: "cache"
@@ -44,7 +44,7 @@ plugins:
     type: query_matcher
     args:
       domain:
-        'provider:geosite:category-ads-all'
+        - 'provider:geosite:category-ads-all'
         - 'provider:geosite:category-porn'
         - 'provider:geosite:win-spy'
         - 'provider:geosite:category-vpnservices'
@@ -99,3 +99,4 @@ servers:
         addr: ":PORT_PLACEHOLDER"   
         url_path: "PATH_PLACEHOLDER"
         get_user_ip_from_header: "X-Forwarded-For"
+        
