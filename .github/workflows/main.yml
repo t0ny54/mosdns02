@@ -17,6 +17,4 @@ jobs:
       - run: flyctl apps create familydns && flyctl regions set sin -a familydns && flyctl deploy --detach -a familydns --remote-only --no-cache
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
-      - run: flyctl regions set sin -a sg-doh
-        env:
-          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+          
