@@ -1,10 +1,12 @@
 FROM irinesistiana/mosdns:latest
 
-ADD hosts /hosts
 COPY ./content /etc/mosdns
-COPY hosts /hosts
 
-RUN sh /etc/mosdns/install_geodata.sh
+ADD hosts /hosts
+COPY hosts /hosts
+ADD crontab.txt /crontab.txt
+ADD script1.sh /script1.sh
+ADD script2.sh /script2.sh
 
 ENV PORT=8080
 ENV DOH_PATH=/dns-query
