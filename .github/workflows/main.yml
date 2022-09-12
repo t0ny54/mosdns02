@@ -1,4 +1,6 @@
 name: Update blocklist
+  repository_dispatch:
+  workflow_dispatch:
 on:
   push:
     paths-ignore:
