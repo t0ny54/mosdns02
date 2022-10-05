@@ -18,5 +18,4 @@
     grace_period = "120s"
     interval = "15s"
     restart_limit = 0
-    timeout = "2s"
-    
+    timeout = "2s"    
