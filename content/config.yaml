@@ -23,7 +23,7 @@ plugins:
   - tag: "mem_cache"
     type: "cache"
     args:
-      size: 100
+      size: 4096
       lazy_cache_ttl: 86400
       lazy_cache_reply_ttl: 30
 
@@ -98,3 +98,4 @@ servers:
         addr: ":PORT_PLACEHOLDER"   
         url_path: "PATH_PLACEHOLDER"
         get_user_ip_from_header: "X-Forwarded-For"
+        
